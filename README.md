@@ -8,7 +8,7 @@ Thankfully I take notes: there are the persistent memory that I don't naturally 
 For years I wrote things in a mostly unordered fashion in many unsaved tabs in NotePad++.
 While better than nothing, it has its limitations.
 
-I recently discovered [this article](https://v5.chriskrycho.com/journal/writing-down-what-i-do-in-obsidian/) by Chris Krycho: " Writing Down What I Do—In Obsidian".
+I recently discovered [this article](https://v5.chriskrycho.com/journal/writing-down-what-i-do-in-obsidian/) by Chris Krycho: "Writing Down What I Do—In Obsidian".
 
 This repository is my own version of his system:
 - The structure is looser (simpler for me to leverage)
@@ -49,7 +49,7 @@ At the end of the week, I open the weekly note, take a look on the combined summ
 Then my month, quarter, year...
 
 It helps me with keeping track of what I have done and what I plan to do, and can help with HR review.
-It can help with writting a [grag document](https://jvns.ca/blog/brag-documents/).
+It can help with writting a [brag document](https://jvns.ca/blog/brag-documents/).
 
 
 ## Contributions
