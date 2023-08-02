@@ -15,6 +15,19 @@ This repository is my own version of his system:
 - It makes use of the Templater plugin to automate some naming and links
 
 ## Requirements
-TODO (Obsidian + Templater)
+TODO; Obsidian + Templater (community pluggin)
+## Configuration
+- Obsidian > Settings > Core plugins (Options) > Templates = Off
+- Obsidian > Settings > Daily notes (Core plugins) > New file location = `Work/Tracking/Daily`
+- Obsidian > Settings > Daily notes (Core plugins) > Template file location = `Work/templates/Daily`
+- Obsidian > Settings > Templater (Community pluggin) > Template folder location = `Work/templates`
+- Obsidian > Settings > Templater (Community pluggin) > Trigger Templater on new file location = On
+
+Note: depending on your system, the templates might consider that your week start on Sunday.
+In France on my French computer, work weeks are configured "from Monday to Friday".
+You might need to fiddle with all instances of `tp.date.weekday` in the templates, and with the Monthly template
+
+
 ## Contributions
-TODO
+TODO;
+TL;DR=please contribute in whatever form suits you. I read the issues and the PR
