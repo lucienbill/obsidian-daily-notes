@@ -1,5 +1,5 @@
 ---
-aliases: ["Work/Tracking/<% tp.date.now("YYYY") %>-FY"|"<% tp.date.now("YYYY") %>-FY"]
+aliases: ["<% tp.date.now("YYYY") %>-FY"]
 ---
 
 ## Summary
