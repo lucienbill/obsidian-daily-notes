@@ -4,7 +4,7 @@ week = tp.date.weekday("YYYY-MM-DD", 1) + "-to-" + tp.date.weekday("YYYY-MM-DD",
 %>
 aliases: ["<% week %>"]
 ---
-Month [[<% tp.date.now("YYYY-MM") %>]]
+Mois [[<% tp.date.now("YYYY-MM") %>]]
 ## Résumé
 
 ## Détails
