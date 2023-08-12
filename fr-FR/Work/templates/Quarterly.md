@@ -2,7 +2,7 @@
 <%* quarter = tp.date.now("YYYY") + "-Q" + tp.date.now("Q") %>
 aliases: ["<% quarter %>"]
 ---
-Year [[<% tp.date.now("YYYY") %>-FY]]
+Année [[<% tp.date.now("YYYY") %>-FY]]
 ## Résumé
 
 ## Détails
