@@ -1,7 +1,10 @@
 ---
-aliases: ["<% tp.date.now("YYYY-MM") %>"]
+aliases: ["<% tp.file.title %>"]
 ---
-<%* quarter = tp.date.now("YYYY") + "-Q" + tp.date.now("Q") %>
+<%*
+firstDayOfThisMonth = tp.date.now("YYYY-MM-DD", 0, tp.file.title + "-01", "YYYY-MM-DD")
+quarter = tp.date.now("YYYY", 0, firstDayOfThisMonth) + "-Q" + tp.date.now("Q", 0, firstDayOfThisMonth)
+%>
 Quarter [[<% quarter %>]]
 ## Summary
 
@@ -9,7 +12,7 @@ Quarter [[<% quarter %>]]
 
 <%*
 weeks = [...Array(6).keys()].map(
-   offset => moment().startOf('month').day("Monday").add(parseInt(offset*7), 'd').format('YYYY-MM-DD') + "-to-" + moment().startOf('month').day("Monday").add(parseInt(offset*7)+4, 'd').format('YYYY-MM-DD')
+   offset => tp.date.weekday("YYYY-MM-DD", 1 + offset * 7, firstDayOfThisMonth, "YYYY-MM-DD") + "-to-" + tp.date.weekday("YYYY-MM-DD",  5 + offset * 7, firstDayOfThisMonth, "YYYY-MM-DD")  
 )
 %>
 
