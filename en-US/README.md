@@ -22,20 +22,21 @@ Copy the templates from `{this repo}/{language}/Work/templates` into `{your Obsi
 Then configure Obisidian:
 - Obsidian > Settings > Core plugins (Options) > Templates = **Off**
 - Obsidian > Settings > Daily notes (Core plugins) > New file location = `Work/Tracking/Daily`
-- Obsidian > Settings > Daily notes (Core plugins) > Template file location = `Work/templates/Daily`
+- Obsidian > Settings > Daily notes (Core plugins) > Template file location = `Work/templates/Notes`
 - Obsidian > Settings > Templater (Community pluggin) > Template folder location = `Work/templates`
 
 Optional configuration:
-- Obsidian > Settings > Templater (Community pluggin) > Trigger Templater on new file location = **On** - effect= the "Daily" template will be automatically executed when you create a daily note.
+- Obsidian > Settings > Templater (Community pluggin) > Trigger Templater on new file location = **On** - effect= the "Notes" template will be automatically executed when you create a daily note.
 
 Then exit the Settings and click on "Open today's daily note" (by default it should be a calendar icon on the left bar).
-The "Daily" template will be automatically executed on your daily note (if you activated the option).
+The "Notes" template will be automatically executed on your daily note (if you activated the option).
 
-Other templates will need to be manually executed on your selected file from the "Templater" icon (it looks like `<%`)
+The "Notes" template will need to be manually executed for other notes (weekly, quarterly, monthly, yearly): select your file, then use the "Templater" icon (it looks like `<%`) and select "Notes".
+The template will automatically adapt to the type of note, it uses the name of the file to guess the type.
 
 Note: depending on your system, the templates might consider that your week start on Sunday.
 In France on my French computer, work weeks are configured "from Monday to Friday".
-You might need to fiddle with all instances of `tp.date.weekday` in the templates, and with the Monthly template
+You might need to fiddle with all instances of `tp.date.weekday` in the "Notes" template"
 
 ## How do I use it
 Everyday, I write stuff:
@@ -56,4 +57,5 @@ It can help with writting a [brag document](https://jvns.ca/blog/brag-documents/
 
 ## Contributions
 TODO;
-TL;DR=please contribute in whatever form suits you. I read the issues and the PR
+TL;DR=please contribute in whatever form suits you.
+I read the issues and the PR

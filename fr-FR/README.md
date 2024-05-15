@@ -22,20 +22,21 @@ Copiez les modèles (templates) de `{ce repo}/{langue}/Work/templates` dans `{vo
 Configurez ensuite Obisidian :
 - Obsidian > Paramètres > Modules principaux (Options) > Modèles = **Désactivé**
 - Obsidian > Paramètres > Notes quotidiennes (Modules principaux) > Nouvel emplacement de fichier = `Work/Tracking/Daily`
-- Obsidian > Paramètres > Notes quotidiennes (Modules principaux) > Emplacement du fichier de modèle = `Work/templates/Daily`
+- Obsidian > Paramètres > Notes quotidiennes (Modules principaux) > Emplacement du fichier de modèle = `Work/templates/Notes`
 - Obsidian > Paramètres > Templater (Module complémentaire) > Template folder location = `Work/templates`
 
 Configuration optionnelle :
-- Obsidian > Paramètres > Templater (Module complémentaire) > Trigger Templater on new file location = **Activé** - effet : exécute le modèle "Daily" lorsque que vous créez une note quotidienne en cliquant sur "Ouvrir la note quotidienne"
+- Obsidian > Paramètres > Templater (Module complémentaire) > Trigger Templater on new file location = **Activé** - effet : exécute le modèle "Notes" lorsque que vous créez une note quotidienne en cliquant sur "Ouvrir la note quotidienne"
 
 Quittez ensuite les paramètres et cliquez sur "Open today's daily note" (Ouvrir la note quotidienne d'aujourd'hui) - par défaut, il s'agit d'une icône de calendrier dans la barre de gauche.
-Si vous avez activé la configuration `Templater (Module complémentaire) > Trigger Templater on new file location`, le modèle "Daily" sera automatiquement exécuté sur votre note quotidienne.
+Si vous avez activé la configuration `Templater (Module complémentaire) > Trigger Templater on new file location`, le modèle "Notes" sera automatiquement exécuté sur votre note quotidienne.
 
-Les autres modèles devront être exécutés manuellement sur le fichier sélectionné à partir de l'icône "Templater" (qui ressemble à `<%`).
+Pour les autres types de notes (semaine, mois, trimestre, année), le modèle "Notes" devra être exécuté manuellement sur le fichier sélectionné à partir de l'icône "Templater" (qui ressemble à `<%`).
+Le modèle s'adapte automatiquement au type de note, en se basant sur le nom du fichier.
 
 Note : selon votre système, les modèles peuvent considérer que votre semaine commence le dimanche.
 En France sur mon ordinateur, les semaines de travail sont configurées "du lundi au vendredi".
-Il se peut que vous deviez modifier toutes les instances de `tp.date.weekday` dans les modèles, ainsi que le modèle Monthly.
+Il se peut que vous deviez modifier toutes les instances de `tp.date.weekday` dans le modèle.
 
 ## Comment je l'utilise
 Tous les jours, j'écris des choses :
@@ -56,4 +57,5 @@ Cela peut aider à rédiger un [brag document](https://jvns.ca/blog/brag-documen
 
 ## Contributions
 TODO ;
-TL;DR=contribuez sous la forme qui vous convient. Je lis les issues et les PR
+TL;DR=contribuez sous la forme qui vous convient.
+Je lis les issues et les PR
