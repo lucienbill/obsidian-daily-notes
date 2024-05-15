@@ -36,7 +36,8 @@ The template will automatically adapt to the type of note, it uses the name of t
 
 Note: depending on your system, the templates might consider that your week start on Sunday.
 In France on my French computer, work weeks are configured "from Monday to Friday".
-You might need to fiddle with all instances of `tp.date.weekday` in the "Notes" template"
+You might need to fiddle with all instances of `tp.date.weekday` in the "Notes" template
+
 
 ## How do I use it
 Everyday, I write stuff:
