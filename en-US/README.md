@@ -38,6 +38,7 @@ Note: depending on your system, the templates might consider that your week star
 In France on my French computer, work weeks are configured "from Monday to Friday".
 You might need to fiddle with all instances of `tp.date.weekday` in the "Notes" template
 
+
 ## How do I use it
 Everyday, I write stuff:
 - What I plan to do
