@@ -77,7 +77,7 @@ function generateDetailsContent(periodicity){
         const weeks = [...Array(6).keys()].map(
             offset => tp.date.weekday("YYYY-MM-DD", 1 + offset * 7, firstDayOfThisMonth, "YYYY-MM-DD") + "-to-" + tp.date.weekday("YYYY-MM-DD",  5 + offset * 7, firstDayOfThisMonth, "YYYY-MM-DD")  
         )
-        const output = "**Important: there are more lines than needed. Remove the extra lines**" + 
+        const output = "**Important: Il y a des lignes en trop, supprimez-les**" + 
         `\n- [[${weeks[0]}]]: ![[${weeks[0]}#Résumé]]` + 
         `\n- [[${weeks[1]}]]: ![[${weeks[1]}#Résumé]]` + 
         `\n- [[${weeks[2]}]]: ![[${weeks[2]}#Résumé]]` + 
